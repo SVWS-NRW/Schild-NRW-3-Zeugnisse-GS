@@ -5,7 +5,7 @@ Zeugnisreports für die Primarstufe - Schild-NRW 3
 
 - [Anleitungen im Wiki](#anleitungen-im-wiki)
 - [Updates und Versionsgeschichte](#updates-und-versionsgeschichte)
-- [Zeugniseinstellungen über Ini-Datei](#zeugniseinstellungen-über-Ini-Datei)
+- [Zeugniseinstellungen über INI-Datei](#zeugniseinstellungen-über-ini-datei)
 - [Kontakt](#kontakt)
 
 ## Anleitungen im Wiki
@@ -20,7 +20,7 @@ Zeugnisreports für die Primarstufe - Schild-NRW 3
 Die aktuellen Zeugnispakete können hier herunter geladen werden:
 https://github.com/SVWS-NRW/Schild-NRW-3-Zeugnisse-GS/releases
 
-## Zeugniseinstellungen über Ini-Datei
+## Zeugniseinstellungen über INI-Datei
 ### [Textzeugnisreihenfolge]
 Hier können Sie festlegen, in welcher Reihenfolge die einzelnen Fächergruppen bei der Ausgabe als Textzeugnis erscheinen sollen.
 Der Eintrag „Englisch“ gilt stellvertretend für alle Fremdsprachen, also auch z.B. für muttersprachlichen Unterricht in Türkisch.
@@ -52,7 +52,7 @@ Wenn diese Option aktiviert ist (also ohne vorangestelltes Semikolon) werden die
 ### SchriftgroesseBemerkungen=11
 Hier kann die Schriftgröße für die Bemerkungstexte festgelegt werden (z.B. SchriftgroesseBemerkungen=11).
 
-### Schriftart = Calibri
+### Schriftart=Calibri
 Hier kann die Schriftart für das Zeugnis festgelegt werden. Die Texte aus dem Schulkopf werden mit dieser Einstellung nicht angepasst
 
 ### NurRufname
@@ -66,21 +66,21 @@ Ist das Feld „Alle Namen“ leer, hat die Deaktivierung dieser Option keine Au
 Wenn diese Option aktiviert ist (also ohne vorangestelltes Semikolon) werden die einzelnen Fächer auf dem Zeugnis zusammengehalten, es wird also kein automatischer Zeilenumbruch innerhalb eines Faches eingefügt, falls die Angaben nicht mehr vollständig auf eine Seite passen. Das kann aber dazu führen, dass mehr Platz verbraucht wird, weil beim Druck die Bemerkungstexte zu einem Fach dann komplett auf die nächste Seite verschoben werden.
 
 ### ASVSeite2
-Wenn diese Option aktiviert ist (also ohne vorangestelltes Semikolon) wird der Bereich für „Arbeits- und Sozialverhalten“ erst auf der zweiten Seite dargestellt, d.h. auf der ersten Seite befinden sich nur der Schulname und die persönlichen Angaben (Name, Klasse usw.) des betreffenden Kindes.
+    Wenn diese Option aktiviert ist (also ohne vorangestelltes Semikolon) wird der Bereich für „Arbeits- und Sozialverhalten“ erst auf der zweiten Seite dargestellt, d.h. auf der ersten Seite befinden sich nur der Schulname und die persönlichen Angaben (Name, Klasse usw.) des betreffenden Kindes.
 
 ### FächerAufNeuerSeite
-Wenn diese Option aktiviert ist, werden die Kompetenzbeschreibungen der „echten“ Fächer (also alles außer „Arbeits- und Sozialverhalten“ und einm optionalen, frei definierbaren „Fach“) auf einer neuen Seite ausgegeben.
-Hinweis: Wenn Sie eine möglichst platzsparende Ausgabe erzielen möchten, sollten Sie die Optionen „Zusammenhalten“, „ASVSeite2“ und „FächerAufNeuerSeite“ deaktivieren.
+Wenn diese Option aktiviert ist, werden die Kompetenzbeschreibungen der „echten" Fächer (also alles außer „Arbeits- und Sozialverhalten" und einem optionalen, frei definierbaren „Fach") auf einer neuen Seite ausgegeben.
+    Hinweis: Wenn Sie eine möglichst platzsparende Ausgabe erzielen möchten, sollten Sie die Optionen „Zusammenhalten“, „ASVSeite2“ und „FächerAufNeuerSeite“ deaktivieren.
 
 ### Folgejahrgang
 Wenn diese Option aktiviert ist (also ohne vorangestelltes Semikolon) wird im „Versetzungstext“ anstelle der Folgeklasse der Folgejahrgang ausgegeben. Dies betrifft aber nur die Folgejahrgänge 03 und 04.
 
 Beispiel:   
 Folgejahrgang deaktiviert   
-„..wird zum 01.08.2018' in die Klasse 03A versetzt.“
+„..wird zum 01.08.2018 in die Klasse 03A versetzt."
 
 Folgejahrgang aktiviert   
-„..wird zum 01.08.2018 in den Jahrgang 03versetzt.“
+„..wird zum 01.08.2018 in den Jahrgang 03 versetzt."
 
 ### Unterschrift
 Über diesen Eintrag kann das „Namensformat“ bei den Unterschriften für Schulleitung und Klassenleitung festgelegt werden. Folgende Einträge sind möglich:
@@ -216,4 +216,8 @@ Ankreuzsymbol=X  (es wird ein „Kreuzchen“ angezeigT)
 
 ## Kontakt
 
-Bugs im Forum oder ... als Issue oder FAchberater Wenn du Fragen oder Anmerkungen hast, eröffne bitte ein Issue auf GitHub.
+Bei Fragen und Problemen stehen folgende Möglichkeiten zur Verfügung:
+
+- **Fachberater kontaktieren**: Für spezifische Fragen und technische Unterstützung
+- **Forum**: Für allgemeine Fragen und Lösungsansätze in der Community
+- **GitHub Issues**: Für die Meldung von Bugs und Fehler bitte ein Issue auf GitHub erstellen
