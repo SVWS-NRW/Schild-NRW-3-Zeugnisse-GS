@@ -49,7 +49,7 @@ jobs:
           set -euo pipefail
 
           #Name der zip-Datei
-          ZIP_NAME="GS-Zeugnisse-NRW3-v${VERSION}-$(date +'%d.%m.%Y').zip"							   
+          ZIP_NAME="GS-Zeugnisse-Schild-NRW3-v${VERSION}-$(date +'%d.%m.%Y').zip"							   
 
           #Windows-Zeilenenden in .zipallow entfernen (falls Datei unter Windows bearbeitet wurde)
           sed -i 's/\r$//' .zipallow
