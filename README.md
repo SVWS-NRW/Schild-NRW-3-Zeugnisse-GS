@@ -4,8 +4,8 @@ Zeugnisreports für die Primarstufe - Schild-NRW 3
 ## Inhaltsverzeichnis
 
 - [Anleitungen im Wiki](#anleitungen-im-wiki)
-- [Zeugniseinstellungen über Ini-Datei](#zeugniseinstellungen-über-Ini-Datei)
 - [Updates und Versionsgeschichte](#updates-und-versionsgeschichte)
+- [Zeugniseinstellungen über Ini-Datei](#zeugniseinstellungen-über-Ini-Datei)
 - [Kontakt](#kontakt)
 
 ## Anleitungen im Wiki
@@ -14,6 +14,11 @@ Zeugnisreports für die Primarstufe - Schild-NRW 3
 - [Grundschulzeugnisse Ankreuzzeugnis - Tutorial](https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=Grundschulzeugnisse_Ankreuzzeugnis_(Tutorial))
 - [Zeugnis-Broschürendruck mit dem Foxit Reader](https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=Zeugnis-Brosch%C3%BCrendruck_mit_dem_Foxit_Reader_(Tutorial))
 - [Grundschulzeugnisse Lernstandsberichte - Tutorial](https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=Grundschulzeugnisse_Lernstandsberichte_(Tutorial))
+
+## Updates und Versionsgeschichte
+
+Die aktuellen Zeugnispakete können hier herunter geladen werden:
+https://github.com/SVWS-NRW/Schild-NRW-3-Zeugnisse-GS/releases
 
 ## Zeugniseinstellungen über Ini-Datei
 ### [Textzeugnisreihenfolge]
@@ -80,25 +85,25 @@ Folgejahrgang aktiviert
 ### Unterschrift
 Über diesen Eintrag kann das „Namensformat“ bei den Unterschriften für Schulleitung und Klassenleitung festgelegt werden. Folgende Einträge sind möglich:
 
-**Unterschrift=VN**   
+Unterschrift=VN   
 Die Ausgabe erfolgt als „Vorname Nachname“ (z.B. Monika Meyer, Klassenlehrerin)
 
-**Unterschrift=NV**    
+Unterschrift=NV    
 Die Ausgabe erfolgt als „Nachname, Vorname“ (z.B. Meyer, Monika, Klassenlehrerin)
 
-**Unterschrift=N**    
+Unterschrift=N    
 Die Ausgabe erfolgt nur als Nachname (z.B. Meyer, Klassenlehrerin)
 Das ist auch die Vorgabe, wenn kein Eintrag gefunden wird.
 
-**Unterschrift=ON**    
+Unterschrift=ON    
 Als Ausgabe erfolgt nur „Klassenleitung“ keine Vor- oder Nachnamen.
 
 ### UnterschriftMitStVertr
 Über diesen Eintrag kann man festlegen ob der/die stellvertretende Klassenlehrer/in im Unterschriftenfeld zusätzlich zur Klassenlehrerin angezeigt werden soll.
 
-**UnterschriftMitStVertr=ja**    
+UnterschriftMitStVertr=ja    
 Stellvertretender Klassenlehrer/in wird angezeigt.
-**UnterschriftMitStVertr=nein**     
+UnterschriftMitStVertr=nein     
 Stellvertretender Klassenlehrer/in wird nicht angezeigt.
 
 ### SchulleitungText
@@ -206,15 +211,6 @@ Im Jahrgang E1 wird der Fachkopf bei den Fächern Deutsch, Englisch, Mathematik,
 Über diesen Eintrag kann das „Ankreuzsymbol“ festgelegt werden. Gültige Einträge sind    
 Ankreuzsymbol=C  (es wird ein „Check-Häkchen“ angezeigt)    
 Ankreuzsymbol=X  (es wird ein „Kreuzchen“ angezeigT)    
-
-
-
-Wichtig: Möglicherweise muss bei dieser Option ein speziell angepasstes Deckblatt (Schullogo, persönliche Angaben) verwendet werden. Bitte beachten Sie hierzu die Hinweise in Abschnitt 4.1.
-
-## Updates und Versionsgeschichte
-
-Die aktuellen Zeugnispakete können hier herunter geladen werden:
-https://github.com/SVWS-NRW/Schild-NRW-3-Zeugnisse-GS/releases
 
 
 
