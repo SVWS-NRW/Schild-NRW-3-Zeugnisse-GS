@@ -16,9 +16,9 @@ object RepOrt: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\SVWS-Arbeitsverzeichnis\SchILD-Reports\Zeugnis_Grundschuld_Ok' +
-    't2025\Lernstandsberichte\Ankreuzform\GS-Lernstandsbericht_Ankreu' +
-    'zform.rtm'
+    'C:\SVWS-Arbeitsverzeichnis\SchILD-Reports\Zeugnisse\GS_Mai_2026\' +
+    'Lernstandsberichte\Ankreuzform\GS-Lernstandsbericht_Ankreuzform.' +
+    'rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -32,10 +32,13 @@ object RepOrt: TppReport
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectURI = 'http://localhost'
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RefreshTokenLifeSpan = 365
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectURI = 'http://localhost'
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RefreshTokenLifeSpan = 365
   EmailSettings.ConnectionSettings.EnableMultiPlugin = False
+  EmailSettings.ConnectionSettings.ConnectionStatusInfo = [csiStatusBar]
   EmailSettings.DeleteFile = False
   EmailSettings.Enabled = True
   LanguageID = 'Default'
@@ -66,6 +69,8 @@ object RepOrt: TppReport
   PDFSettings.ImageCompressionLevel = 1
   PDFSettings.PDFAFormat = pafNone
   PDFSettings.ScaleImages = False
+  PDFSettings.Layers = False
+  PDFSettings.Outline = False
   PreviewFormSettings.PageBorder.mmPadding = 0
   PreviewFormSettings.SinglePageOnly = True
   PreviewFormSettings.ZoomSetting = zs100Percent
@@ -88,18 +93,24 @@ object RepOrt: TppReport
   CloudDriveSettings.DropBoxSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.DropBoxSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.DropBoxSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.DropBoxSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.DropBoxSettings.DirectorySupport = True
+  CloudDriveSettings.DropBoxSettings.SharedResources = True
   CloudDriveSettings.GoogleDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.GoogleDriveSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.GoogleDriveSettings.DirectorySupport = False
+  CloudDriveSettings.GoogleDriveSettings.SharedResources = False
   CloudDriveSettings.OneDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.OneDriveSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.OneDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.OneDriveSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.OneDriveSettings.DirectorySupport = True
+  CloudDriveSettings.OneDriveSettings.SharedResources = True
   Left = 128
   Top = 8
-  Version = '22.06'
+  Version = '23.02'
   mmColumnWidth = 0
   DataPipelineName = 'Schueler'
   object ppHeaderBand1: TppHeaderBand
@@ -625,7 +636,7 @@ object RepOrt: TppReport
           Template.Offset = 284
           Template.Format = ftASCII
           Units = utMillimeters
-          Version = '22.06'
+          Version = '23.02'
           mmColumnWidth = 0
           DataPipelineName = 'plAKF_ASV'
           object ppTitleBand1: TppTitleBand
@@ -1415,7 +1426,7 @@ object RepOrt: TppReport
         Template.Offset = 284
         Template.Format = ftASCII
         Units = utMillimeters
-        Version = '22.06'
+        Version = '23.02'
         mmColumnWidth = 0
         DataPipelineName = 'plAKF_SONST'
         object ppTitleBand2: TppTitleBand
@@ -2186,7 +2197,7 @@ object RepOrt: TppReport
         PrinterSetup.PaperSize = 9
         Template.Format = ftASCII
         Units = utMillimeters
-        Version = '22.06'
+        Version = '23.02'
         mmColumnWidth = 0
         DataPipelineName = 'plDeutsch'
         object ppTitleBand3: TppTitleBand
@@ -2332,7 +2343,7 @@ object RepOrt: TppReport
                 PrinterSetup.PaperSize = 9
                 Template.Format = ftASCII
                 Units = utMillimeters
-                Version = '22.06'
+                Version = '23.02'
                 mmColumnWidth = 0
                 DataPipelineName = 'plAKF_Faecher'
                 object ppDetailBand6: TppDetailBand
@@ -3217,7 +3228,7 @@ object RepOrt: TppReport
               PrinterSetup.PaperSize = 9
               Template.Format = ftASCII
               Units = utMillimeters
-              Version = '22.06'
+              Version = '23.02'
               mmColumnWidth = 0
               DataPipelineName = 'plDeutsch'
               object ppDetailBand9: TppDetailBand
@@ -3423,7 +3434,7 @@ object RepOrt: TppReport
         PrinterSetup.PaperSize = 9
         Template.Format = ftASCII
         Units = utMillimeters
-        Version = '22.06'
+        Version = '23.02'
         mmColumnWidth = 0
         DataPipelineName = 'plFremdsprachen'
         object ppDetailBand7: TppDetailBand
@@ -3469,7 +3480,7 @@ object RepOrt: TppReport
               PrinterSetup.PaperSize = 9
               Template.Format = ftASCII
               Units = utMillimeters
-              Version = '22.06'
+              Version = '23.02'
               mmColumnWidth = 0
               DataPipelineName = 'plAKF_Faecher'
               object ppDetailBand8: TppDetailBand
@@ -4474,7 +4485,7 @@ object RepOrt: TppReport
         PrinterSetup.PaperSize = 9
         Template.Format = ftASCII
         Units = utMillimeters
-        Version = '22.06'
+        Version = '23.02'
         mmColumnWidth = 0
         DataPipelineName = 'plMathematik'
         object ppDetailBand10: TppDetailBand
@@ -4521,7 +4532,7 @@ object RepOrt: TppReport
               Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
-              Version = '22.06'
+              Version = '23.02'
               mmColumnWidth = 0
               DataPipelineName = 'plAKF_Faecher'
               object ppDetailBand11: TppDetailBand
@@ -5527,7 +5538,7 @@ object RepOrt: TppReport
         PrinterSetup.PaperSize = 9
         Template.Format = ftASCII
         Units = utMillimeters
-        Version = '22.06'
+        Version = '23.02'
         mmColumnWidth = 0
         DataPipelineName = 'plSachuntericht'
         object ppDetailBand12: TppDetailBand
@@ -5574,7 +5585,7 @@ object RepOrt: TppReport
               Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
-              Version = '22.06'
+              Version = '23.02'
               mmColumnWidth = 0
               DataPipelineName = 'plAKF_Faecher'
               object ppDetailBand13: TppDetailBand
@@ -6579,7 +6590,7 @@ object RepOrt: TppReport
         PrinterSetup.PaperSize = 9
         Template.Format = ftASCII
         Units = utMillimeters
-        Version = '22.06'
+        Version = '23.02'
         mmColumnWidth = 0
         DataPipelineName = 'plSport'
         object ppDetailBand14: TppDetailBand
@@ -6626,7 +6637,7 @@ object RepOrt: TppReport
               Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
-              Version = '22.06'
+              Version = '23.02'
               mmColumnWidth = 0
               DataPipelineName = 'plAKF_Faecher'
               object ppDetailBand15: TppDetailBand
@@ -7631,7 +7642,7 @@ object RepOrt: TppReport
         PrinterSetup.PaperSize = 9
         Template.Format = ftASCII
         Units = utMillimeters
-        Version = '22.06'
+        Version = '23.02'
         mmColumnWidth = 0
         DataPipelineName = 'plSprache'
         object ppDetailBand16: TppDetailBand
@@ -7678,7 +7689,7 @@ object RepOrt: TppReport
               Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
-              Version = '22.06'
+              Version = '23.02'
               mmColumnWidth = 0
               DataPipelineName = 'plAKF_Faecher'
               object ppDetailBand17: TppDetailBand
@@ -8682,7 +8693,7 @@ object RepOrt: TppReport
         PrinterSetup.PaperSize = 9
         Template.Format = ftASCII
         Units = utMillimeters
-        Version = '22.06'
+        Version = '23.02'
         mmColumnWidth = 0
         DataPipelineName = 'plKunstUndMusik'
         object ppDetailBand18: TppDetailBand
@@ -8863,7 +8874,7 @@ object RepOrt: TppReport
                 Template.Offset = 284
                 Template.Format = ftASCII
                 Units = utMillimeters
-                Version = '22.06'
+                Version = '23.02'
                 mmColumnWidth = 0
                 DataPipelineName = 'plAKF_Faecher'
                 object ppDetailBand19: TppDetailBand
@@ -9736,7 +9747,7 @@ object RepOrt: TppReport
         PrinterSetup.PaperSize = 9
         Template.Format = ftASCII
         Units = utMillimeters
-        Version = '22.06'
+        Version = '23.02'
         mmColumnWidth = 0
         DataPipelineName = 'plReligion'
         object ppDetailBand20: TppDetailBand
@@ -9783,7 +9794,7 @@ object RepOrt: TppReport
               Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
-              Version = '22.06'
+              Version = '23.02'
               mmColumnWidth = 0
               DataPipelineName = 'plAKF_Faecher'
               object ppDetailBand21: TppDetailBand
@@ -10786,7 +10797,7 @@ object RepOrt: TppReport
         PrinterSetup.PaperSize = 9
         Template.Format = ftASCII
         Units = utMillimeters
-        Version = '22.06'
+        Version = '23.02'
         mmColumnWidth = 0
         object ppDetailBand2: TppDetailBand
           Border.mmPadding = 0
@@ -10875,7 +10886,7 @@ object RepOrt: TppReport
         PrinterSetup.PaperSize = 9
         Template.Format = ftASCII
         Units = utMillimeters
-        Version = '22.06'
+        Version = '23.02'
         mmColumnWidth = 0
         DataPipelineName = 'plDeutsch'
         object ppDetailBand22: TppDetailBand
@@ -10920,7 +10931,7 @@ object RepOrt: TppReport
               PrinterSetup.PaperSize = 9
               Template.Format = ftASCII
               Units = utMillimeters
-              Version = '22.06'
+              Version = '23.02'
               mmColumnWidth = 0
               DataPipelineName = 'plAKF_Faecher'
               object ppDetailBand23: TppDetailBand
@@ -11246,7 +11257,7 @@ object RepOrt: TppReport
           PrinterSetup.PaperSize = 9
           Template.Format = ftASCII
           Units = utMillimeters
-          Version = '22.06'
+          Version = '23.02'
           mmColumnWidth = 0
           object ppHeaderBand2: TppHeaderBand
             Border.mmPadding = 0
@@ -11321,8 +11332,8 @@ object RepOrt: TppReport
           #10'\pard\cf1\f0\fs14\lang1033 Gegen die Entscheidung, $SCHUELER$ n' +
           'icht zu versetzen, kann innerhalb eines Monats nach Bekanntgabe ' +
           'des Zeugnisses Widerspruch erhoben werden. Der Widerspruch ist b' +
-          'ei der Schule ($SCHULE$) schriftlich oder zur Niederschrift zu e' +
-          'rheben\f1\lang1031 .\f0\lang1033\par'#13#10'}'#13#10#0
+          'ei der Schule ($SCHULE$) zu erheben\f1\lang1031 .\f0\lang1033\pa' +
+          'r'#13#10'}'#13#10#0
         RemoveEmptyLines = False
         Stretch = True
         Transparent = True

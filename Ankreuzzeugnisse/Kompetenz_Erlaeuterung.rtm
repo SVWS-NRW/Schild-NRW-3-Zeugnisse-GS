@@ -12,9 +12,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'D:\schild_entwicklung\NeueVersion\SchILD-Reports\GS-Zeugnisse\SU' +
-    '-HansAlfredKeller\Kompetenz_Erlaeuterung.rtm'
+  Template.FileName =
+    'C:\SVWS-Arbeitsverzeichnis\SchILD-Reports\Zeugnisse\GS_Mai_2026\Ankreuzzeugnisse\Kompetenz_Erlaeuterung.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
